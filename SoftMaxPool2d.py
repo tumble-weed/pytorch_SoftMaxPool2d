@@ -3,7 +3,7 @@ import torch
 class SoftMaxPool2d(torch.nn.Module):
     def __init__(self,T,wsize,wstep):
         assert len(wsize) == 2
-        super(SoftMaxPooling,self).__init__()
+        super(SoftMaxPool2d,self).__init__()
         self.T = torch.tensor(T).float()
         
         self.wsize = wsize
